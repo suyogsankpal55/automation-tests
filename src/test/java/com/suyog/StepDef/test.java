@@ -24,6 +24,9 @@ public class test {
 	public void user_is_on_login_page()  {
 		try {
           System.out.println("aaa"+driver.getCurrentUrl());
+          System.out.println("bbbb");
+          System.out.println("aaannnn");
+
 		}
 		catch(Exception e)
 		{
