@@ -42,6 +42,8 @@ public class DriverInstance {
 		try {
 			System.setProperty("webdriver.chrome.driver", "e:\\Automation\\Tools\\drivers\\chromedriver.exe");
 			System.out.println("Launching browser");
+						System.out.println("Launching browser");
+
 			driver=new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
