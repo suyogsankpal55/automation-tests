@@ -25,6 +25,8 @@ public class test {
 		try {
           System.out.println("aaa"+driver.getCurrentUrl());
           System.out.println("bbbb");
+          System.out.println("aaannnn");
+
 		}
 		catch(Exception e)
 		{
