@@ -23,7 +23,7 @@ public class test {
 	@Given("^User is on login page$")
 	public void user_is_on_login_page()  {
 		try {
-          System.out.println(driver.getCurrentUrl());
+          System.out.println("aaa"+driver.getCurrentUrl());
 		}
 		catch(Exception e)
 		{
