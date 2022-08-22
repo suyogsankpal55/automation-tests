@@ -2,6 +2,7 @@ package com.suyog.StepDef;
 
 import org.openqa.selenium.WebDriver;
 
+import com.suyog.driverFactory.DriverInstance;
 import com.test.PageInfo.testInfo;
 
 import io.cucumber.java.en.And;
@@ -13,16 +14,16 @@ public class test {
 
 	WebDriver driver;
 	public static testInfo t;
-	test(){
-		//driver=
+	public test(){
+		driver= DriverInstance.driver;
 		t= new testInfo(driver);
 	}
 
 
 	@Given("^User is on login page$")
-	public void user_is_on_login_page() throws Throwable {
+	public void user_is_on_login_page()  {
 		try {
-
+          System.out.println(driver.getCurrentUrl());
 		}
 		catch(Exception e)
 		{

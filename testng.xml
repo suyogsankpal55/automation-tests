@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
+  <listeners>
+  		<listener class-name="com.suyog.listenerFactory.SuiteListener"></listener>
+  		<listener class-name="com.suyog.listenerFactory.TestListener"></listener>
+  </listeners>
+  <parameter name="appURL" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"> </parameter>
+  <parameter name="userName" value="Admin"> </parameter>
+  <parameter name="password" value="admin123"> </parameter>
   <test name="Test">
+    <parameter name="browserName" value="CHROME"> </parameter>
     <classes>
       <class name="com.suyog.TestRunner.TestRunner"/>
     </classes>

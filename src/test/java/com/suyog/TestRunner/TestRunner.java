@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features = "classpath:Features"
+		features = {"classpath:Fetaures"}
 		,glue={"com.suyog.StepDef"}
 		)
 
